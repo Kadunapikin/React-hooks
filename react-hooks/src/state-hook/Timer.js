@@ -16,6 +16,7 @@ export default function Timer() {
     }, [])
     return (
         <>
+            <h1>Function Component Effects and how to Clean Up Effects</h1>
             <h1>Time: {time}</h1>
             <input onChange={handleChange} value={name}/>
         </>
