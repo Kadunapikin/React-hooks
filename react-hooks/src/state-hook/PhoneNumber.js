@@ -14,8 +14,9 @@ export default function PhoneNumber() {
     };
     return (
         <div>
+            <h1>React Use State Setter Outside of JSX</h1>
             <label for='phone-input'>Phone</label>
-            <input id='phone-input' value={phone} />
+            <input id='phone-input' value={phone} onChange={handleChange} />
         </div>
     )
 }
