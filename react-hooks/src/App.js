@@ -1,4 +1,5 @@
 import './App.css';
+import GroceryCart from './state-hook/GroceryCart';
 import PhoneNumber from './state-hook/PhoneNumber';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <div>
         <PhoneNumber />
+        <GroceryCart />
       </div>
     </div>
   );
