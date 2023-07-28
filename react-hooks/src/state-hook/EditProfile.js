@@ -17,6 +17,7 @@ export default function EditProfile() {
 
     return (
         <form>
+            <h1>Objects in State</h1>
             <input
                 value={profile.firstName || ""}
                 name="firstName"
