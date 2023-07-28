@@ -13,7 +13,7 @@ export default function Timer() {
         return () => {
             clearInterval(intervalId);
         }
-    })
+    }, [])
     return (
         <>
             <h1>Time: {time}</h1>
