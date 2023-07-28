@@ -9,6 +9,12 @@ export default function EditProfile() {
             ...prev, [name]: value,
         }));
     };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert(JSON.stringify(profile, "", 2));
+      };
+
     return (
         <form>
             <input
@@ -38,6 +44,7 @@ export default function EditProfile() {
                 placeholder="Password" 
                 onChange={handleChange}
             />
+            <button onClick={handleSubmit} type="submit">Submit</button>
         </form>
     )
 }
