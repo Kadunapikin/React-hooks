@@ -6,6 +6,9 @@ export default function Timer() {
         const intervalId = setInterval(() => {
             setTime((prevTime) => prevTime + 1);
         }, 1000)
+        return () => {
+            clearInterval(intervalId);
+        }
     })
     return (
         <>
