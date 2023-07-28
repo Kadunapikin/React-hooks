@@ -14,6 +14,7 @@ export default function Timer() {
     return (
         <>
             <h1>Time: {time}</h1>
+            <input value={name}/>
         </>
     )
 }
